@@ -1,0 +1,11 @@
+services:
+  dbt:
+    image: dbt-postgres-image    # ganti nama image kamu
+    container_name: dbt_service
+    command: tail -f /dev/null   # biar tetap hidup
+    working_dir: /usr/app
+    volumes:
+      - /home/theo/dbt/my_dbt_project:/usr/app     # mount project dbt
+      - /home/theo/.dbt:/root/.dbt          # mount profiles.yml
+    restart: unless-stopped
+

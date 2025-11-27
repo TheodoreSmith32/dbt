@@ -1,0 +1,27 @@
+version: 2
+
+sources:
+  - name: dvdrental_project1
+    schema: public
+    description: "Raw tables dari database dvdrental"
+
+    tables:
+      - name: customer
+        description: "Data pelanggan"
+        columns:
+          - name: customer_id
+            tests:
+              - unique
+              - not_null
+      - name: rental
+        description: "Data transaksi rental"
+      - name: payment
+        description: "Data pembayaran pelanggan"
+      - name : film
+        description: "Data Master Film"
+      - name : inventory
+        decription: "Data Inventory"
+      - name : fact_rental_film
+        description : "Fact Table for most rentals film"
+
+
