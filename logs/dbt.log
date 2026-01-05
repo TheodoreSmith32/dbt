@@ -149,3 +149,159 @@ Runtime Error
 [0m09:51:35.642610 [debug] [MainThread]: Command `dbt deps` failed at 09:51:35.642533 after 0.08 seconds
 [0m09:51:35.642891 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ba4959ce20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ba485365c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75ba48536500>]}
 [0m09:51:35.643148 [debug] [MainThread]: Flushing usage events
+[0m15:55:53.146953 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c17094b8d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c1708471cc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c1708471c60>]}
+
+
+============================== 15:55:53.153439 | e2b2baf9-05f7-43f7-9afa-3718e6d2a215 ==============================
+[0m15:55:53.153439 [info ] [MainThread]: Running with dbt=1.10.15
+[0m15:55:53.153993 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'write_json': 'True', 'empty': 'None', 'use_experimental_parser': 'False', 'profiles_dir': '/home/theo/.dbt', 'target_path': 'None', 'quiet': 'False', 'use_colors': 'True', 'version_check': 'True', 'introspect': 'True', 'printer_width': '80', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'no_print': 'None', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'invocation_command': 'dbt docs serve --port 7050', 'debug': 'False'}
+[0m15:55:53.154598 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/theo/personal_portfolio/dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:55:53.156887 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 0.07844911, "process_in_blocks": "78448", "process_kernel_time": 0.661001, "process_mem_max_rss": "99464", "process_out_blocks": "8", "process_user_time": 1.494438}
+[0m15:55:53.157559 [debug] [MainThread]: Command `dbt docs serve` failed at 15:55:53.157472 after 0.08 seconds
+[0m15:55:53.157824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c17094b8d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c1708472380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c1708471cc0>]}
+[0m15:55:53.158102 [debug] [MainThread]: Flushing usage events
+[0m15:55:54.337622 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:26:50.669532 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db91fcb8e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db91ec71c00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db91ec71ba0>]}
+
+
+============================== 12:26:50.677258 | 2ec24d72-837c-4b79-96fd-9dcac09dcc2c ==============================
+[0m12:26:50.677258 [info ] [MainThread]: Running with dbt=1.10.15
+[0m12:26:50.677864 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'log_path': 'logs', 'write_json': 'True', 'target_path': 'None', 'no_print': 'None', 'introspect': 'True', 'static_parser': 'True', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'log_format': 'default', 'debug': 'False', 'indirect_selection': 'eager', 'profiles_dir': '/home/theo/.dbt', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'fail_fast': 'False', 'invocation_command': 'dbt init dbt_trino_pg', 'empty': 'None', 'printer_width': '80', 'use_colors': 'True', 'quiet': 'False', 'version_check': 'True', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m12:26:50.704851 [debug] [MainThread]: Starter project path: /home/theo/.local/lib/python3.10/site-packages/dbt/include/starter_project
+[0m12:26:50.717273 [info ] [MainThread]: 
+Your new dbt project "dbt_trino_pg" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:26:50.717849 [info ] [MainThread]: Setting up your profile.
+[0m12:27:10.262574 [error] [MainThread]: Encountered an error:
+
+[0m12:27:10.292215 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/theo/.local/lib/python3.10/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/home/theo/.local/lib/python3.10/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "/home/theo/.local/lib/python3.10/site-packages/dbt/cli/main.py", line 483, in init
+    results = task.run()
+  File "/home/theo/.local/lib/python3.10/site-packages/dbt/task/init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "/home/theo/.local/lib/python3.10/site-packages/dbt/task/init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "/home/theo/.local/lib/python3.10/site-packages/dbt/task/init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/home/theo/.local/lib/python3.10/site-packages/dbt/task/init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "/home/theo/.local/lib/python3.10/site-packages/dbt/task/init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+  File "/home/theo/.local/lib/python3.10/site-packages/click/termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "/home/theo/.local/lib/python3.10/site-packages/click/termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m12:27:10.295587 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 19.703297, "process_in_blocks": "109464", "process_kernel_time": 0.241226, "process_mem_max_rss": "104624", "process_out_blocks": "72", "process_user_time": 1.478482}
+[0m12:27:10.296433 [debug] [MainThread]: Command `dbt init` failed at 12:27:10.296304 after 19.70 seconds
+[0m12:27:10.297221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db91fcb8e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db91ebb1420>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7db91ebb2b30>]}
+[0m12:27:10.297786 [debug] [MainThread]: Flushing usage events
+[0m19:44:04.126227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb47fcab100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb47ea39060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb47ea39000>]}
+
+
+============================== 19:44:04.130720 | 16e5f540-1f42-41c2-9912-c00514c5cdc5 ==============================
+[0m19:44:04.130720 [info ] [MainThread]: Running with dbt=1.10.15
+[0m19:44:04.131159 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'cache_selected_only': 'False', 'quiet': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'partial_parse': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'profiles_dir': '/home/theo/.dbt', 'invocation_command': 'dbt init dbt_pg_labs', 'version_check': 'True', 'empty': 'None', 'write_json': 'True', 'indirect_selection': 'eager', 'no_print': 'None', 'log_cache_events': 'False', 'printer_width': '80', 'warn_error': 'None', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m19:44:04.157120 [debug] [MainThread]: Starter project path: /home/theo/.local/lib/python3.10/site-packages/dbt/include/starter_project
+[0m19:44:04.166053 [info ] [MainThread]: 
+Your new dbt project "dbt_pg_labs" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:44:04.166417 [info ] [MainThread]: Setting up your profile.
+[0m19:44:11.584496 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 7.527781, "process_in_blocks": "96792", "process_kernel_time": 0.23337, "process_mem_max_rss": "112236", "process_out_blocks": "80", "process_user_time": 1.371565}
+[0m19:44:11.585126 [debug] [MainThread]: Command `dbt init` succeeded at 19:44:11.585045 after 7.53 seconds
+[0m19:44:11.585415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb47fcab100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb481464430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb47d704be0>]}
+[0m19:44:11.585709 [debug] [MainThread]: Flushing usage events
+[0m19:44:14.091457 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:00:49.074082 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78247c4db100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78247b339090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78247b339030>]}
+
+
+============================== 10:00:49.082415 | 5d1adfbe-1b6e-4ef5-98a4-5ebc7ceac74e ==============================
+[0m10:00:49.082415 [info ] [MainThread]: Running with dbt=1.10.15
+[0m10:00:49.083578 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'log_format': 'default', 'printer_width': '80', 'partial_parse': 'True', 'log_path': 'logs', 'no_print': 'None', 'write_json': 'True', 'log_cache_events': 'False', 'target_path': 'None', 'invocation_command': 'dbt init dbt_pg_labs', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'indirect_selection': 'eager', 'version_check': 'True', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'introspect': 'True', 'empty': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/theo/.dbt'}
+[0m10:00:49.110463 [debug] [MainThread]: Starter project path: /home/theo/.local/lib/python3.10/site-packages/dbt/include/starter_project
+[0m10:00:49.121887 [info ] [MainThread]: 
+Your new dbt project "dbt_pg_labs" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:00:49.122466 [info ] [MainThread]: Setting up your profile.
+[0m10:00:55.810135 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 6.840637, "process_in_blocks": "43624", "process_kernel_time": 0.230706, "process_mem_max_rss": "97808", "process_out_blocks": "72", "process_user_time": 1.919804}
+[0m10:00:55.810858 [debug] [MainThread]: Command `dbt init` succeeded at 10:00:55.810736 after 6.84 seconds
+[0m10:00:55.811342 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78247c4db100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78247dcd6dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x78247b526fb0>]}
+[0m10:00:55.811741 [debug] [MainThread]: Flushing usage events
+[0m10:00:57.601321 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:22:21.715644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x763ffcbd70a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x763ffb969060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x763ffb969000>]}
+
+
+============================== 15:22:21.737159 | 88f16ce8-b964-4bb4-b57e-96ea9d824909 ==============================
+[0m15:22:21.737159 [info ] [MainThread]: Running with dbt=1.10.15
+[0m15:22:21.738256 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'introspect': 'True', 'partial_parse': 'True', 'static_parser': 'True', 'warn_error': 'None', 'log_path': 'logs', 'printer_width': '80', 'invocation_command': 'dbt init dbt_pg_labs_02', 'log_format': 'default', 'quiet': 'False', 'no_print': 'None', 'target_path': 'None', 'debug': 'False', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/home/theo/.dbt', 'send_anonymous_usage_stats': 'True', 'empty': 'None', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'use_colors': 'True', 'write_json': 'True', 'fail_fast': 'False', 'use_experimental_parser': 'False'}
+[0m15:22:21.749922 [debug] [MainThread]: Starter project path: /home/theo/.local/lib/python3.10/site-packages/dbt/include/starter_project
+[0m15:22:21.764411 [info ] [MainThread]: 
+Your new dbt project "dbt_pg_labs_02" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:22:21.764925 [info ] [MainThread]: Setting up your profile.
+[0m15:22:28.783653 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 7.1726627, "process_in_blocks": "416", "process_kernel_time": 0.154889, "process_mem_max_rss": "112640", "process_out_blocks": "80", "process_user_time": 1.624353}
+[0m15:22:28.784455 [debug] [MainThread]: Command `dbt init` succeeded at 15:22:28.784294 after 7.17 seconds
+[0m15:22:28.784867 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x763ffcbd70a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x763ffb8e3d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x763ffb710040>]}
+[0m15:22:28.785336 [debug] [MainThread]: Flushing usage events
+[0m15:22:29.910381 [debug] [MainThread]: An error was encountered while trying to flush usage events

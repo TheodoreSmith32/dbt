@@ -1,0 +1,12 @@
+my_dbt_project:
+  outputs:
+    dev:
+      dbname: mydb
+      host: localhost
+      pass: '123'
+      port: 5435
+      schema: public
+      threads: 1
+      type: postgres
+      user: postgres
+  target: dev

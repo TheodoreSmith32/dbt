@@ -1,0 +1,126 @@
+version: 2
+
+sources:
+  - name: dbt_northwind
+    schema: northwind
+    description: "Raw Northwind tables"
+
+    tables:
+
+      - name: customers
+        description: "Customer master data"
+        columns:
+          - name: customer_id
+            tests: [not_null, unique]
+          - name: company_name
+            tests: [not_null]
+
+      - name: orders
+        description: "Customer orders header"
+        columns:
+          - name: order_id
+            tests: [not_null, unique]
+          - name: customer_id
+            tests: [not_null]
+          - name: order_date
+            tests: [not_null]
+
+      - name: order_details
+        description: "Order line items"
+        columns:
+          - name: order_id
+            tests: [not_null]
+          - name: product_id
+            tests: [not_null]
+          - name: quantity
+            tests: [not_null]
+
+      - name: products
+        description: "Product master data"
+        columns:
+          - name: product_id
+            tests: [not_null, unique]
+          - name: product_name
+            tests: [not_null]
+          - name: supplier_id
+            tests: [not_null]
+          - name: category_id
+            tests: [not_null]
+
+      - name: suppliers
+        description: "Supplier master data"
+        columns:
+          - name: supplier_id
+            tests: [not_null, unique]
+          - name: company_name
+            tests: [not_null]
+
+      - name: categories
+        description: "Product categories"
+        columns:
+          - name: category_id
+            tests: [not_null, unique]
+          - name: category_name
+            tests: [not_null]
+
+      - name: employees
+        description: "Employee master data"
+        columns:
+          - name: employee_id
+            tests: [not_null, unique]
+          - name: last_name
+            tests: [not_null]
+
+      - name: shippers
+        description: "Shipping companies"
+        columns:
+          - name: shipper_id
+            tests: [not_null, unique]
+          - name: company_name
+            tests: [not_null]
+
+      - name: territories
+        description: "Sales territories"
+        columns:
+          - name: territory_id
+            tests: [not_null, unique]
+          - name: region_id
+            tests: [not_null]
+
+      - name: region
+        description: "Sales regions"
+        columns:
+          - name: region_id
+            tests: [not_null, unique]
+          - name: region_description
+            tests: [not_null]
+
+      - name: employee_territories
+        description: "Bridge table between employees and territories"
+        columns:
+          - name: employee_id
+            tests: [not_null]
+          - name: territory_id
+            tests: [not_null]
+
+      - name: customer_demographics
+        description: "Customer demographic categories"
+        columns:
+          - name: customer_type_id
+            tests: [not_null, unique]
+
+      - name: customer_customer_demo
+        description: "Bridge table between customers and demographics"
+        columns:
+          - name: customer_id
+            tests: [not_null]
+          - name: customer_type_id
+            tests: [not_null]
+
+      - name: us_states
+        description: "US states reference data"
+        columns:
+          - name: state_id
+            tests: [not_null, unique]
+          - name: state_name
+            tests: [not_null]
